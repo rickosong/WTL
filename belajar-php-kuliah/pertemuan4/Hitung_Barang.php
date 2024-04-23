@@ -25,7 +25,7 @@
 
             $total += $totalSatuan; 
         }
-        echo "<b>Total Pembelian  = Rp. $total <b>";
+        echo "<b>Total Pembelian Anda Sebesar = Rp. $total <b>";
 
     ?>
 </body>

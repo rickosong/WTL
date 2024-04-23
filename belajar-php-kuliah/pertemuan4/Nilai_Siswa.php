@@ -18,7 +18,9 @@
 
         $angka = 1;
         for($i = 0; $i < 10; $i++){
-            echo "No. $angka Nama Siswa : $nama[$i] Kelas : $kelas[$i] <br> 
+            echo "No. $angka <br>
+            Nama Siswa : $nama[$i] <br>
+            Kelas : $kelas[$i] <br> 
             Memperoleh Nilai Sebagai berikut : <br>
             - Nilai Tugas = $tugas[$i] <br> 
             - Nilai Ulangan 1 = $ulangan1[$i] <br>
