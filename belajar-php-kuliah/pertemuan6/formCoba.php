@@ -29,6 +29,38 @@
             </tr>
         </table>
     </form>
+
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Id</th>
+            <th>Nama</th>
+            <th>Hapus</th>
+            <th>Ubah</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php 
+        include "koneksiCoba.php"; 
+        $data = $db->query("SELECT * FROM siswa ORDER BY siswa.id");
+        $no = 1;
+        ?>
+        <?php foreach ($data as $siswa) : ?>
+            <tr>
+                <td><?= $no ?></td>
+                <td><?= $siswa["id"] ?></td>
+                <td><?= $siswa["nama"] ?></td>
+                <td><a href="delCoba1.php?id=<?= $siswa["id"] ?>">Hapus</a></td>
+                <td><a href="editCoba1.php?id=<?= $siswa["id"] ?>">Ubah</a></td>
+            </tr>
+            <?php $no++ ?>
+        <?php endforeach ?>
+        </tbody>
+    </table>
+
+
 </body>
 </html>
 
